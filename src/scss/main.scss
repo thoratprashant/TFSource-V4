@@ -1,6 +1,61 @@
-// @import "../../../node_modules/bootstrap/scss/bootstrap";
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40; 
+    --black: #000; 
+    --white: #fff;   
+  }
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-h1{
-    color: red;
+html, body{font-size: 1rem;} 
+
+// Bootstrap 5 utility classes 
+
+// Commented fonts are provided by Bootstrap 5 
+.fs-17{font-size: 0.625rem !important} //10px
+.fs-16{font-size: 0.75rem !important} //12px
+.fs-15{font-size: 0.875rem !important} //14px
+.fs-14{font-size: 0.938rem !important} //15px
+// fs-6{font-size: 1rem !important} 16px 
+.fs-13{font-size: 1.063rem !important} //17px
+.fs-12{font-size: 1.125rem !important} //18px
+.fs-11{font-size: 1.188rem !important} //19px
+// fs-5{font-size: 1.25rem !important} 20px
+.fs-10{font-size: 1.375 !important} //22px
+// fs-4{font-size: 1.5rem !important} 24px
+.fs-9{font-size: 1.625 !important} //26px
+// fs-3{font-size: 1.75rem !important} 28px
+.fs-8{font-size: 1.875 !important} //30px
+.fs-7{font-size: 2.125 !important} //34px
+// fs-2{font-size: 2rem !important} 32px
+// fs-1{font-size: 2.5rem !important} 40px
+
+
+
+.navbar-brand{
+    
 }
+.bg-warning{
+    background-color: var(--black) !important; 
+}
+
+
