@@ -46,6 +46,14 @@ $danger:$red;
 $black:$black; 
 $light:$gray-100; 
 $dark:$gray-300;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1691px
+);
  
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -92,8 +100,8 @@ html, body{font-size: 1rem;}
 // fw-bold, fw-bolder, fw-normal, fw-light, fw-lighter   
 
 // Comman
-.cursor-pointer{cursor: pointer;}
-ul li{list-style-type: none;}
+.cursor-pointer{cursor: pointer;} 
+// .container-xxl{}
  
  
 .header--wrapper{ 
@@ -202,6 +210,20 @@ ul li{list-style-type: none;}
             }
         }
     }
+}
+
+.black--header{
+    ul{
+        list-style-type: none;
+        li{
+            flex-grow: 2;
+        }
+    }
+}
+
+// Section One
+.section--one{
+    padding: 0 20px 20px;
 }
 
 
