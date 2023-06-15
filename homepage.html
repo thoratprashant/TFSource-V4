@@ -44,7 +44,7 @@
         <a href="#" class="tf--sm--logo" >
           <img src="./src/images/png/TFS-Logo-Sm.png" alt="" width="75px">
         </a>
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar--cust py-0 w-100">
+        <nav class="navbar navbar-expand-lg navbar--cust py-0 w-100">
           <div class="container-fluid">
             <a href="#">
               <img src="./src/images/png/ToyGeek.png" alt="" width="90px">
@@ -76,6 +76,61 @@
             </div>
           </div>
         </nav>
+      </div>
+    </header>
+
+    <header class="row main--header" id="navbar_top">
+      <div class="col-12 d-flex align-items-center">
+        <div class="d-flex align-items-center flex-shrink-0">
+          <div class="logo--sec">
+            <a href="#">
+              <img src="./src/images/png/TFS-Logo-Lg.png" alt="" width="155px">
+            </a>
+          </div> 
+          <button type="button" class="btn btn-light fs-15 fw-bold d-flex align-items-center me-3">
+            <img class="me-3" src="./src/images/svg/icon-shop-all.svg" alt="" >
+            Shop All Categories</button>
+        </div>
+        <div class="d-flex w-100">
+          <ul class="p-0 m-0 w-100 d-flex right--option">
+            <li class="global--search d-flex align-items-center flex-shrink-0">
+              <input type="text" class="form-control" placeholder="What can we help you find?">
+            </li>
+            <li class="d-flex align-items-center dd--options justify-content-center flex-shrink-0">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle fs-14 fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="me-2" src="./src/images/svg/icon-cs.svg" alt="" >
+                  Customer Service
+                </a> 
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="d-flex align-items-center justify-content-center dd--options flex-shrink-0">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle fs-14 fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="me-2" src="./src/images/svg/icon-account.svg" alt="" >
+                  Login/Account
+                </a> 
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="d-flex align-items-center justify-content-center add--to--cart flex-shrink-0">
+              <h6 class="m-0 text-dark-red">$144.99</h6>
+              <div class="position-relative">
+                <div class="cart--count fs-10 fw-bold d-flex align-items-center justify-content-center">5</div>
+                <img class="ms-2" src="./src/images/svg/icon-cart.svg" alt="" >
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
      
@@ -158,6 +213,7 @@
 
   </div><!-- container //  -->
 
+  <!-- Bootstrap JS Bundle with Popper -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="src/js/main.js"></script>

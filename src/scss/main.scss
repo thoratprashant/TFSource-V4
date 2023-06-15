@@ -22,13 +22,13 @@
     --dark: #343a40; 
     --black: #000; 
     --white: #fff;  
-    --1E1E1E: #1E1E1E;    
+    --1E1E1E: #1E1E1E;  
+    --darkred: #A32638;  
 } 
 
 $black-1e1e1e:#1E1E1E; 
 $white:#fff;
-$purple:#6f42c1; 
-$dark-red:#7C2128;
+$purple:#6f42c1;  
 $red:#A32638; 
 $yellow:#F1C400;
 $green:#198754;
@@ -42,7 +42,7 @@ $secondary:$white;
 $success:$green;
 $info:$cyan;
 $warning:$yellow;
-$danger:$red; 
+$danger:$red;  
 $black:$black; 
 $light:$gray-100; 
 $dark:$gray-300;
@@ -73,11 +73,27 @@ html, body{font-size: 1rem;}
 .fs-34{font-size: 2.125rem !important}    
 .fs-40{font-size: 2.5rem !important}  
 
+// Buttons
+.btn{
+    &.btn-light{
+        background: transparent;
+        border: none;
+        color: var(--1E1E1E);
+        &:hover{
+            background-color: var(--light);
+        }
+    }
+}
+
+// Color
+.text-dark-red{color: #7C2128 !important;}
+
 // font weight are provided by Bootstrap 5 
 // fw-bold, fw-bolder, fw-normal, fw-light, fw-lighter   
 
 // Comman
 .cursor-pointer{cursor: pointer;}
+ul li{list-style-type: none;}
  
  
 .header--wrapper{ 
@@ -124,7 +140,7 @@ html, body{font-size: 1rem;}
                     width: 335px;  
                     position: absolute;
                     right: 0;
-                    top: 28px;
+                    top: 40px;
                     z-index: 9999;
                     padding: 15px 15px 0 0;
                     display: none;
@@ -137,8 +153,55 @@ html, body{font-size: 1rem;}
             }
         }
         
+    } 
+}
+.main--header{
+    background-color: var(--white);
+    border-bottom: 1px solid #CCC9C1;
+    &.fixed-top{
+        border-bottom: 1px solid #DBDBDB;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     }
-    
+    .logo--sec{
+        margin: 5px 50px 0 20px;
+    }
+    .right--option{
+        li{
+            border-left: 1px solid #ddd;
+            height: 69px;
+            &.global--search{
+                flex-grow: 2;
+                .form-control{
+                    margin: 0 30px;
+                    border: none;
+                    &:focus{
+                        box-shadow: 0 0 6px #ddd;
+                    }
+                } 
+            }
+            &.dd--options{
+                padding: 0 30px;
+                .dropdown-toggle{
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+            &.add--to--cart{
+                padding: 0 40px;
+                .cart--count{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    color: var(--white);
+                    background: var(--darkred); 
+                    position: absolute;
+                    right: -15px;
+                    top: -13px; 
+                }
+            }
+        }
+    }
 }
 
 
