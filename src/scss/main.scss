@@ -224,7 +224,28 @@ html, body{font-size: 1rem;}
 // Section One
 .section--one{
     padding: 0 20px 20px;
+    .mega--slider{
+        .carousel-inner{
+            height: 620px;
+            border: 1px solid #131212;
+            background-color: #000;
+            .carousel-item{
+                
+            }
+        }
+        .controls{
+            .carousel-control-prev, 
+            .carousel-control-next{
+                position: relative;
+            }
+        }
+    }
 }
 
+// ======================================================================================================
+
+// Gayatri SCSS
 
 
+
+// Satyajeet SCSS
