@@ -274,6 +274,39 @@ html, body{font-size: 1rem;}
 // Section Two > Best Seller
 .section--two{
     padding-top: 50px;
+    .best--seller--wrapper{
+        .card{
+            border: none;
+            background: var( --white);
+            border-radius: 6px;
+            .card-body{
+                .product--img{
+                    height: 300px;
+                }
+            } 
+        }
+        .slick-arrow{
+            position: absolute;
+            right: 0;
+            top: -38px;
+            width: 50px;
+            height: 50px;
+            &::before{
+                content: unset;
+            }
+            &.slick-prev {
+                left: unset;
+                right: 62px;
+                top: -63px;
+                background-image: url('../../../images/svg/carousel-arrow-btn.svg');
+                transform: rotate(180deg);
+            }
+            &.slick-next{
+                background-image: url('../../../images/svg/carousel-arrow-btn.svg');
+            }
+           
+        }
+    }
 }
 
 // ======================================================================================================

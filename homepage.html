@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TFSource</title>
   <link rel="stylesheet" href="./src/scss/css/.min.css/main.min.css">
+  <link rel="stylesheet" href="node_modules/slick-slider/slick/slick.css">
+  <link rel="stylesheet" href="node_modules/slick-slider/slick/slick-theme.css">
 </head>
 
 <body>
@@ -391,39 +393,90 @@
         <div class="col-12 mb-3">
           <h1 class="text-primary fs-30 fw-bold text-uppercase">best sellers</h1>
         </div>
-        <div class="col-12">
+        <div class="col-12 position-relative">
+          <div class="best--seller--wrapper" id="bestSellerSlider">
+            <div class="card">
+              <div class="card-body d-flex flex-column w-100 p-0">
+                 <div class="product--img d-flex align-items-center justify-content-center">
+                    <a href="tf.com">
+                      <img src="./src/images/png/product-image-1.png" alt="" class="img-fluid">
+                    </a>
+                 </div>
+              </div>
+              <div class="card-footer d-flex flex-column w-100">
+                
+              </div>
+            </div>
+            <div class=" ">
+              <h3>2</h3>
+            </div>
+            <div class=" ">
+              <h3>3</h3>
+            </div>
+            <div class=" ">
+              <h3>4</h3>
+            </div>
+            <div class=" ">
+              <h3>5</h3>
+            </div>
+            <div class=" ">
+              <h3>6</h3>
+            </div>
+            <div class=" ">
+              <h3>7</h3>
+            </div>
+            <div class=" ">
+              <h3>8</h3>
+            </div>
+            <div class=" ">
+              <h3>9</h3>
+            </div>
+            <div class=" ">
+              <h3>10</h3>
+            </div>
+            <div class=" ">
+              <h3>11</h3>
+            </div>
+            <div class=" ">
+              <h3>12</h3>
+            </div>
+            <div class=" ">
+              <h3>13</h3>
+            </div>
+            <div class=" ">
+              <h3>14</h3>
+            </div>
+            <div class=" ">
+              <h3>15</h3>
+            </div>
+            <div class=" ">
+              <h3>16</h3>
+            </div>
+            <div class=" ">
+              <h3>17</h3>
+            </div>
+            <div class=" ">
+              <h3>18</h3>
+            </div>
+            <div class=" ">
+              <h3>19</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
 
 
 
 
 
-  <!-- Bootstrap JS Bundle with Popper -->
+
+  <!-- JS Start here -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/slick-slider/slick/slick.min.js"></script>
   <script src="src/js/main.js"></script>
-
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) {
-          document.getElementById('navbar_top').classList.add('fixed-top');
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top');
-          // remove padding top from body
-          document.body.style.paddingTop = '0';
-        }
-      });
-    });
-    // DOMContentLoaded  end
-  </script>
 </body>
 
 </html
