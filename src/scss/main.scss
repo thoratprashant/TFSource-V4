@@ -247,5 +247,43 @@ html, body{font-size: 1rem;}
 // Gayatri SCSS
 
 
+.text_black{ 
+    color: #1E1E1E; 
+    text-decoration: none !important;
+ } 
+
+
+a.hover_red:hover{
+    color: #A32638 !important;
+    text-decoration: underline !important; 
+} 
+
+
+.img-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 0 auto; 
+    background-color: #fff;
+}
+
+.img-div{
+    background-image: url('../../../images/svg/Featured-Image.svg');
+    background-repeat: no-repeat; 
+    background-size:   96.7%;
+    position: relative;
+}
+
+.featured-list{
+    border-bottom: 2px solid #1E1E1E;;
+}
+.img-footer{
+    background-color: #A32638; 
+    color: #fff;
+    margin-top: 23rem;
+}
+
 
 // Satyajeet SCSS
