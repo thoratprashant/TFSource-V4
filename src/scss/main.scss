@@ -62,6 +62,7 @@ html, body{font-size: 1rem;}
     
 // Font sizes are:
 .fs-10{font-size: 0.625rem !important}  
+.fs-11{font-size: 0.688rem !important}  
 .fs-12{font-size: 0.75rem !important} 
 .fs-13{font-size: 0.813rem !important}  
 .fs-14{font-size: 0.875rem !important}  
@@ -97,7 +98,8 @@ html, body{font-size: 1rem;}
 .text-dark-red{color: #7C2128 !important;}
 
 // font weight are provided by Bootstrap 5 
-// fw-bold, fw-bolder, fw-normal, fw-light, fw-lighter   
+// fw-bold, fw-bolder, fw-normal, fw-light, fw-lighter 
+.fw-500{font-weight: 500 !important;}  
 
 // Comman
 .cursor-pointer{cursor: pointer;} 
@@ -275,16 +277,9 @@ html, body{font-size: 1rem;}
 .section--two{
     padding-top: 50px;
     .best--seller--wrapper{
-        .card{
-            border: none;
-            background: var( --white);
-            border-radius: 6px;
-            .card-body{
-                .product--img{
-                    height: 300px;
-                }
-            } 
-        }
+        .slick-slide{
+            margin: 0 10px;
+        } 
         .slick-arrow{
             position: absolute;
             right: 0;
@@ -305,6 +300,88 @@ html, body{font-size: 1rem;}
                 background-image: url('../../../images/svg/carousel-arrow-btn.svg');
             }
            
+        }
+    }
+}
+
+// Featured Preorders 
+.featured--preorders--wrapper{
+    .head--txt{
+        border-top: 1px solid #CCC9C1;
+        padding-top: 35px;
+        margin-top: 40px;
+    }
+    .card{
+        margin: 0 10px 20px 10px;
+        width: 257px;
+    }
+}
+
+
+// Global
+.card{
+    border: none;
+    background: var( --white);
+    border-radius: 6px;
+    .card-body{
+        .product--img{
+            position: relative;
+            height: 300px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            img{
+                max-height: 300px;
+                max-width: 300px;
+            }
+            .chips--box{
+                width: 100px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                .chips {
+                    border: 1px solid; 
+                    padding: 1px 15px;  
+                    border-radius: 100px;
+                    &.preorder{
+                        background-color: #f8f8f8;
+                        border-color: #F1C400;
+                        color: var(--1E1E1E);
+                    }
+                    &.sale{
+                        color: var(--white);
+                        background-color: var(--darkred);
+                        border-color: var(--darkred);
+                    }
+                }
+            }
+            
+           
+        }
+    } 
+    .card-footer{
+        padding: 0 25px 15px 25px;
+        background: var( --white);
+        .rating{
+            background-image: url('../../../images/svg/star-grey.svg');
+            width: 76px;
+            height: 15px;
+            background-size: contain;
+            margin-right: 10px;
+            .rating--achived{
+                background-image: url('../../../images/svg/star-yellow.svg');
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 15px;
+                background-size: contain;
+            }
+        }
+        .product--name{
+            border-top: 0.5px solid #CCC9C1;
+            margin-top: 13px;
+            margin-bottom: 10px;
+            padding-top: 5px;
+            min-height: 65px;
         }
     }
 }
