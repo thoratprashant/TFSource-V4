@@ -249,9 +249,10 @@ html, body{font-size: 1rem;}
 .white{
     color: #fff;
 }
-.mega-menu-container{
-        padding: 0px 0px 0px 100px ;
-
+  
+.mega-menu-product{
+    background-color:#F4F4F4 ;
+}
     .text_black{ 
         color: #1E1E1E; 
         text-decoration: none !important;
@@ -259,6 +260,7 @@ html, body{font-size: 1rem;}
     
     
     a.hover_red:hover{
+        
         color: #A32638 !important;
         text-decoration: underline !important; 
         cursor: pointer;
@@ -268,37 +270,54 @@ html, body{font-size: 1rem;}
         border-bottom: 2px solid #1E1E1E;;
     }
 
+    .img-box{
+        display: flex;
+        align-items: center;
+        border: 1px solid #E0E0E0;
+        border-radius: 3px;
+        justify-content: center;
+        margin: 0 auto; 
+        background-color: #fff; 
+    }
+
     .card{
-  
-        .img-box{
-            display: flex;
-            align-items: center;
-            border: 1px solid #E0E0E0;
-            border-radius: 3px;
-            justify-content: center;
-            margin: 0 auto; 
-            background-color: #fff; 
-        }
+        background-image: url('../../../images/svg/Featured-Image.svg');
+        height: 712px;
+        width: 512px;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
         
         .img-div{
-            background-image: url('../../../images/svg/Featured-Image.svg');
+           background-image: url('../../../images/svg/Featured-Image.svg');
             background-repeat: no-repeat; 
             background-size:   cover;
             position: relative;
         }
-        .card-footer{
+        .card-footer1{
             text-align: center;
+            align-items: center;
+            background: linear-gradient(0deg, rgb(37 35 36 / 30%), rgb(12 12 12 / 30%));
+            justify-content: center;
+            border-radius: 0px;
+           height: 134px;
+           
+        } 
+        .card-footer2{
+            text-align: center;
+            align-items: center;
             background-color: #A32638; 
             justify-content: center;
             border-radius: 0px;
             color: #fff;
-            // margin-top: -46px;
+            height:75px;
+           
         }
     }
-}
+ 
+    
 
-.mega-menu-product-container{
-    padding: 0px 100px 0px 100px ;
+ 
 
     .text_black{ 
         color: #1E1E1E; 
@@ -313,33 +332,69 @@ html, body{font-size: 1rem;}
     } 
 
     .featured-list{
-        border-bottom: 2px solid #1E1E1E;;
+        border-bottom: 2px solid #1E1E1E;
     }    
-}
+
+    .border-top{
+        border-top: 1px solid #E0E0E0;
+    }
+ 
+    .border-bottom{
+        border-bottom: 1px solid #E0E0E0;
+    }
+ 
 
 .border-right{
     border-right: 1px solid #4F4F4F;
+    margin-right: 2rem;
     .p-6{
         padding: 3rem;
-    }
-
-    a.hover_yellow:hover{
-        color: #F1C400 !important;
-        text-decoration: underline !important; 
-        cursor: pointer;
     } 
-
-
-
 }
+
+a.hover_yellow:hover{
+    color: #F1C400 !important;
+    text-decoration: underline !important; 
+    cursor: pointer;
+} 
+
 
 /* (1920x1080) Full HD Display */
 @media  screen and (max-width: 1920px) and (min-width: 1020px){
      
-    .border-right{
-        .p-6{
-            padding: 3rem 6rem ;
+    .card{
+        background-image: url('../../../images/svg/Featured-Image.svg');
+        height: 328px;
+        width: 312px;
+        background-size: cover;
+        background-repeat: no-repeat; 
+
+
+        .card-footer1{
+            text-align: center;
+            align-items: center;
+            background: linear-gradient(0deg, rgb(37 35 36 / 30%), rgb(12 12 12 / 30%));
+            justify-content: center;
+            border-radius: 0px;
+            height: 45px;
+            .product-img{
+                height: 28px !important;
+                width: 50px !important;
+            }
+           
+        } 
+        .card-footer2{
+            text-align: center;
+            align-items: center;
+            background-color: #A32638; 
+            justify-content: center;
+            border-radius: 0px;
+            color: #fff;
+            height:36px;
+           
         }
+
+        
     }
 }
 
